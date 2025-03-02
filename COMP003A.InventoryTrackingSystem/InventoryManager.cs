@@ -1,6 +1,7 @@
 ﻿// Author: [Alvaro Pulido]
-
-using System.Security.Cryptography.X509Certificates;
+// Course: COMP003A
+// Faculty: Jonathan Cruz
+// Purpose: 
 
 namespace COMP003A.InventoryTrackingSystem
 {
