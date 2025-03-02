@@ -43,7 +43,17 @@ namespace COMP003A.InventoryTrackingSystem
 
         public void UpdateItem(int id, string name, int quantity)
         {
-
+            InventoryItem item = items.Find(item => item.Id==id);
+            if (item != null)
+            {
+                item.Name = name;
+                item.Quantity = quantity;
+                Console.WriteLine("Item updated successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Item not found.");
+            }
         }
     }
 }
