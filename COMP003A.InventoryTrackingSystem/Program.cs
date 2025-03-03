@@ -18,7 +18,7 @@ namespace COMP003A.InventoryTrackingSystem
                 Console.WriteLine("3. Remove Item");
                 Console.WriteLine("4. Update Item");
                 Console.WriteLine("Exit");
-                Console.Write("Select an Option:");
+                Console.Write("Select an Option: ");
 
                 string choice = Console.ReadLine();
 
@@ -37,9 +37,28 @@ namespace COMP003A.InventoryTrackingSystem
                 else if (choice == "3")
                 {
                     Console.Write("Enter item id to remove: ");
-                    int idToRemove= int.Parse(Console.ReadLine());
+                    int idToRemove = int.Parse(Console.ReadLine());
                     manager.RemoveItem(idToRemove);
+                }
+                else if (choice == "4")
+                {
+                    Console.Write("Enter item id to update: ");
+                    int idToUpdate = int.Parse(Console.ReadLine());
+                    Console.Write("Enter new item name: ");
+                    string newName = Console.ReadLine();
+                    int newQuantity = int.Parse(Console.ReadLine());
+                    manager.AddItem(newName, newQuantity);
+                }
+                else if (choice == "5")
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid option. Please try again");
+                }
             }
+
         }
     }
 }

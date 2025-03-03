@@ -1,7 +1,7 @@
 ﻿// Author: [Alvaro Pulido]
 // Course: COMP003A
 // Faculty: Jonathan Cruz
-// Purpose:
+// Purpose: Simple Inventory Tracking System in C#
 
 namespace COMP003A.InventoryTrackingSystem
 {
@@ -10,6 +10,7 @@ namespace COMP003A.InventoryTrackingSystem
         public int Id { get; set; }
         public string Name { get; set; }
         public int Quantity { get; set; }
-        public string Description { get; set; }
     }
+
+     
 }
