@@ -17,7 +17,7 @@ namespace COMP003A.InventoryTrackingSystem
                 Console.WriteLine("2. View Item");
                 Console.WriteLine("3. Remove Item");
                 Console.WriteLine("4. Update Item");
-                Console.WriteLine("Exit");
+                Console.WriteLine("5. Exit");
                 Console.Write("Select an Option: ");
 
                 string choice = Console.ReadLine();
@@ -51,6 +51,7 @@ namespace COMP003A.InventoryTrackingSystem
                 }
                 else if (choice == "5")
                 {
+                    Console.WriteLine("Goodbye");
                     break;
                 }
                 else
